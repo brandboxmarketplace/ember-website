@@ -1,0 +1,12 @@
+<div
+  class="highcharts-wrapper"
+  data-render-state={{if this.isHighchartsImported "settled"}}
+  data-test-highcharts-container
+  {{did-insert this.importHighcharts}}
+>
+  {{#if this.isHighchartsImported}}
+    Highchart was imported. We can start drawing!
+  {{else}}
+    Highchart was not imported.
+  {{/if}}
+</div>
